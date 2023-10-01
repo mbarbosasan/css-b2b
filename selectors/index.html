@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Rewind 101</title>
+</head>
+<style>
+    [data-type] {
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    li:after {
+        content: ' (BR)';
+        font-weight: bold;
+    }
+    p strong {
+        color: red;
+    }
+    .inicio div {
+        margin-left: 2rem;
+    }
+
+    .img > p {
+        color: darkred;
+    }
+
+    .negrito {
+        color : red;
+        font-weight: bold;
+    }
+
+    #italico {
+        font-style: italic;
+    }
+
+    strong,
+    .negrito-vermelho,
+    b {
+        color: darkred;
+        font-weight: bold;
+    }
+
+</style>
+<body>
+<strong>SHAZAM!!!!</strong>
+<p class="negrito-vermelho">Eu sou apenas um parágrafo com algumas palavras em negrito vermelho</p>
+<blockquote>Ao verme que primeiro roeu as frias carnes do meu cadáver dedico como saudosa lembrança
+    <b>essas memórias póstumas</b>
+</blockquote>
+
+
+<p class="negrito">Ao verme que primeiro roeu as frias carnes do meu cadáver dedico como saudosa lembrança</p>
+<p id="italico">essas memórias póstumas</p>
+
+
+<div class="img">
+    <img src="#"/>
+    <p>Texto blá blá blá</p>
+</div>
+<p>Texto blá blá blá</p>
+<img src="#"/>
+<p>Texto blá blá blá</p>
+<img src="#"/>
+<p>Texto blá blá blá</p>
+
+<div class="inicio">
+    <div>
+        <p>Primeiro nível</p>
+        <div>
+            <p>Segundo nível</p>
+            <div>
+                <p>Terceiro nível</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<small>Todos os elementos abaixo terão +2 rem do que o elemento anterior.</small>
+<div class="top box">
+    <div>
+        <p>1 nivel</p>
+        <div>
+            <p>2 nivel</p>
+            <div>
+                <p> 3 nivel</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>Sou o primeiro elemento do parágrafo, portanto, não serei estilizado.</p>
+<p>Sou o segundo elemento do paragrafo, portanto, serei estilizado.</p>
+
+</body>
+</html>
