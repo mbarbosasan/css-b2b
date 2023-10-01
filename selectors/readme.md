@@ -16,11 +16,16 @@ Para estilizar os elementos do HTML podemos fazê-lo através do CSS, e podemos 
 Dito isso, a melhor forma de estilizarmos é através dos seletores e dá pra dizer que temos uma forma para cada situação que você precise, abaixo veremos algumas delas.
 
 **Elementos(_tags_)**: Podemos selecionar elementos HTML através das suas próprias tags, para isso podemos colocar apenas o nome do elemento que queremos estilizá-lo e irá funcionar.
+
 ![img.png](./src/img.png)
+
 **Classes**: Através da classes podemos criar um conjunto de estilizações e replicá-las em qualquer elemento que contenha essa classe, para selecionar a classe precisamos inserir `.` antes do nome da classe.
+
 ![img_11.png](./src/img_11.png)
+
 **IDs**: Onde podemos criar um conjunto de estilizações para um único elemento, visto que não podemos ter mais um elemento com o mesmo ID, para selecionarmos um elemento com esse ID precisamos inserir o `#` antes
 do nome do ID.
+
 ![img_15.png](./src/img_15.png)
 
 ### Seletores de atributo
