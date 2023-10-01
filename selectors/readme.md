@@ -1,7 +1,7 @@
 
 # Conteúdo
 
-1. [Introdução](#inicio)
+1. [Introdução](#introdução)
 2. [Seletores de Atributo](#seletores-de-atributo)
 3. [Agrupando Seletores](#agrupando-seletores)
 4. [Pseudo-elementos e pseudo-classes](#pseudo-elementos-e-pseudo-classes)]
@@ -16,12 +16,12 @@ Para estilizar os elementos do HTML podemos fazê-lo através do CSS, e podemos 
 Dito isso, a melhor forma de estilizarmos é através dos seletores e dá pra dizer que temos uma forma para cada situação que você precise, abaixo veremos algumas delas.
 
 **Elementos(_tags_)**: Podemos selecionar elementos HTML através das suas próprias tags, para isso podemos colocar apenas o nome do elemento que queremos estilizá-lo e irá funcionar.
-![img.png](img.png)
+![img.png](./src/img.png)
 **Classes**: Através da classes podemos criar um conjunto de estilizações e replicá-las em qualquer elemento que contenha essa classe, para selecionar a classe precisamos inserir `.` antes do nome da classe.
-![img_11.png](img_11.png)
+![img_11.png](./src/img_11.png)
 **IDs**: Onde podemos criar um conjunto de estilizações para um único elemento, visto que não podemos ter mais um elemento com o mesmo ID, para selecionarmos um elemento com esse ID precisamos inserir o `#` antes
 do nome do ID.
-![img_15.png](img_15.png)
+![img_15.png](./src/img_15.png)
 
 ### Seletores de atributo
 
@@ -30,11 +30,11 @@ talvez apenas para o primeiro, ou para o último, ou somente para aquele que ati
 
 Ex: quero selecionar apenas o elemento que tenha um atributo muito específico chamado `data-type`.
 
-![img_3.png](img_3.png)
+![img_3.png](./src/img_3.png)
 
 Quando digo que podemos selecionar qualquer elemento que contenha `XPTO` atributo, é realmente qualquer atributo.
 
-![img_4.png](img_4.png)
+![img_4.png](./src/img_4.png)
 
 > **IMPORTANTE**: Apesar de podermos selecionar qualquer atributo, é importante criar algo que tenha uma semântica, isso é, o atributo por si só consegue dizer para qual propósito ele foi inserido.
 > Ex: `data-type`, `event-trigger` e etc.
@@ -43,7 +43,7 @@ Mas podemos ser ainda mais específicos sobre nossos seletores, podendo até mes
 
 Ex: quero selecionar apenas o elemento que tenha o atributo `data-type` mas que ele tenha como valor a palavra `shazam`
 
-![img_5.png](img_5.png)
+![img_5.png](./src/img_5.png)
 
 Apenas precisamos acrescentar o `=` e após isso inserir a _string_ ao qual esse elemento precisa ter.
 
@@ -51,11 +51,11 @@ Apenas precisamos acrescentar o `=` e após isso inserir a _string_ ao qual esse
 
 **Case sensitive:**
 
-![img_6.png](img_6.png)
+![img_6.png](./src/img_6.png)
 
 **Case insensitive:**
 
-![img_7.png](img_7.png)
+![img_7.png](./src/img_7.png)
 
 > **IMPORTANTE**: Dependendo do navegador do usuário talvez essa funcionalidade não esteja disponível. https://caniuse.com/css-case-insensitive
 
@@ -65,17 +65,17 @@ Para isso podemos utilizar alguns _matchers_ para partes de uma string.
 
 Para procurarmos no início do valor do atributo utilizamos do `^`, também conhecido como chapéuzinho, antes do `=`, ficando `^=` como podemos ver abaixo.
 
-![img_8.png](img_8.png)
+![img_8.png](./src/img_8.png)
 
 Para procurarmos no fim do valor do atributo utilizamos do `$`, antes do `=`, ficando `$=`.
 
-![img_9.png](img_9.png)
+![img_9.png](./src/img_9.png)
 
 E se ainda não foi suficiente podemos procurar por qualquer elemento que contenha `XPTO` como valor do atributo, independente se no começo ou ao final.
 
 Para isso utilizamos do `*`, a famigerada estrelinha, antes do `=`, ficando `*=`.
 
-![img_10.png](img_10.png)
+![img_10.png](./src/img_10.png)
 
 ### Agrupando seletores
 
@@ -86,7 +86,7 @@ Para isso podemos agrupar seletores e dar a eles o mesmo conjunto de estilizaç�
 
 Ex: quero que todos os elementos do tipo `<strong>` e que todos `<b>` e os elementos com a classe `negrito-vermelho` tenham suas cores em vermelho.
 
-![img_16.png](img_16.png)
+![img_16.png](./src/img_16.png)
 
 ### Pseudo-elementos e Pseudo-classes
 
@@ -101,11 +101,11 @@ E para selecionarmos essas pseudo-classes nós utilizamos do `:` após o element
 
 Ex: Ao passar o mouse por cima do meu elemento quero que a cor de fundo seja alterada.
 
-![img_14.png](img_14.png)
+![img_14.png](./src/img_14.png)
 
 Ex²: Quero que apenas o último-filho de uma lista tenha a cor vermelha e negrito.
 
-![img_13.png](img_13.png)
+![img_13.png](./src/img_13.png)
 
 Aqui estamos utilizando a pseudo-classe `nth-last-child` onde ele irá selecionar elementos a partir do último elemento, e pode receber como parâmetro o numero da posição elemento contado de "trás pra frente".
 
@@ -116,11 +116,11 @@ e sim "elementos" que são adicionados a outros elementos HTML, normalmente ante
 
 Ex: Podemos inserir um novo elemento antes do nosso parágrafo diretamente através do CSS.
 
-![img_18.png](img_18.png)
+![img_18.png](./src/img_18.png)
 
 Ex: Ou também podemos acessar pseudo-elementos já existentes no elemento.
 
-![img_17.png](img_17.png)
+![img_17.png](./src/img_17.png)
 
 > Importante: Mesma coisa que havia dito anteriormente, existe uma variedade absurda de pseudo-elementos, o objetivo é o mesmo, caso queira conhecer todas você pode sempre consultar o [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-elements)
 
@@ -132,7 +132,7 @@ Aqui veremos como podemos combinar seletores de forma que qualquer elemento que 
 
 Começando dos mais simples, quero selecionar apenas os elementos `strong` que sejam filhos de um `p`
 
-![img_20.png](img_20.png)
+![img_20.png](./src/img_20.png)
 
 > **IMPORTANTE**: quando combinamos seletores dessa forma o elemento que será estilizado sempre será o que atingir a condição, não será o elemento pai ou o elemento que faz parte, para ajudar você pode ler da seguinte forma:
 > Quero selecionar todos os elementos `strong` que sejam filhos de `p`
@@ -143,29 +143,29 @@ Um fato curioso sobre esse tipo de seleção é que a busca é recursiva, isso �
 Com o exemplo acima não fica fácil de compreender, mas em um cenário em que precisamos colocar aninhamento em elementos e para isso precisamos colocar uma _margin-left_ em cada elemento filho nós não precisamos criar
 uma classe para cada elemento filho com seus respectivos níveis, basta que criemos uma classe inicial e selecionar o elemento dentro dela, ex:
 
-![img_21.png](img_21.png)
+![img_21.png](./src/img_21.png)
 
 Agora queremos selecionar apenas o primeiro parágrafo que vier logo em seguida após uma imagem, para isso utilizamos do operador `+` quando quisermos procurar qualquer elemento que venha em sequência ao primeiro elemento.
 
 Ex: Selecionando o primeiro `p` após uma `img`, perceba que um `p` não recebeu o estilo por ser precedido por um `p` ao invés uma `img` como inserimos.
 
-![img_23.png](img_23.png)
+![img_23.png](./src/img_23.png)
 
 Como vimos, o segundo páragrafo não foi aplicado ao estilo, porque o `+` exige que ele seja filho de `img`, no entanto, caso quiséssemos que o `p` também recebesse o estilo precisariamos
 alterar o operador para `~` onde agora basta que o parágrafo tenha como parente o elemento `img`.
 
-![img_24.png](img_24.png)
+![img_24.png](./src/img_24.png)
 
 No estilo anterior temos um problema onde pode acabar que o estilo seja aplicado para todos os elementos `p` que tenham como parente o `img`, no entanto, podemos ser mais restritivos 
 e selecionarmos apenas os que sejam filhos diretamente do elemento ao qual desejamos.
 
 Precisarei mudar o exemplo utilizado já que a tag `img` não admite filhos.
 
-![img_25.png](img_25.png)
+![img_25.png](./src/img_25.png)
 
 
 ### Conclusão
 
 Vimos que há diversas formas de selecionarmos elementos e aplicarmos nossos estilos a eles, e justamente por sua quantidade precisamos memorizá-los 
 mas saber que eles existem e que há formas de fazer isso, dessa forma quando for necessário você pode revisitar a documentação e lembrar novamente como faz,
-apesar de que com o tempo e a quantidade de vezes que você for utilizando vai ficando cada vez mais fácil de fazer.
+apesar de que com o tempo você acabará memorizando/aprendendo.

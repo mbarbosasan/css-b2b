@@ -14,7 +14,7 @@ até conseguir abrigar o conteúdo.
 
 Caso dissermos via CSS o tamanho dessa caixa e caso o texto seja maior do que a caixa, o texto irá "transbordar" a caixa, apesar de ainda fazer parte dela.
 
-![img.png](img.png)
+![img.png](./src/img.png)
 
 ### Content-box vs Border-box
 
@@ -31,6 +31,6 @@ será diminuído do conteúdo da caixa.
 
 Ex: temos uma caixa e iremos definir um tamanho fixo para essa caixa e inserirmos algumas estilizações de _margin_, _padding_ e _border_.
 
-![img_1.png](img_1.png)
+![img_1.png](./src/img_1.png)
 
 Apesar das duas caixas terem sidos definidas com o mesmo _width_ elas tem tamanhos diferentes por conta de suas configurações.
